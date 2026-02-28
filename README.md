@@ -1,100 +1,84 @@
-# VidyaMitra - Intelligent Career Agent 🚀
-<<<<<<< HEAD
+VidyaMitra – Intelligent Career Agent 🚀
 
-VidyaMitra is a modern, AI-powered monolithic application designed to help job seekers optimize their career paths. It combines an intelligent backend with a premium, glassmorphic frontend to provide resume analysis, skill gap detection, career roadmaps, and interactive AI-driven quizzes.
+VidyaMitra is a modern, AI-powered monolithic application designed to help job seekers optimize their career paths. It integrates an intelligent backend with a premium glassmorphic frontend to deliver resume analysis, skill gap detection, personalized career roadmaps, and adaptive AI-driven quizzes.
 
-## ✨ Features
+✨ Features
 
-=======
-VidyaMitra is a modern, AI-powered monolithic application designed to help job seekers optimize their career paths. It combines an intelligent backend with a premium, glassmorphic frontend to provide resume analysis, skill gap detection, career roadmaps, and interactive AI-driven quizzes.
-## ✨ Features
->>>>>>> 34a1d81faa0820f45de81452b3726452e9f4c534
-- **AI Resume Analyzer**: Upload a PDF or paste text to get an instant overall score, strength analysis, and keyword density check.
-- **Dynamic Skill Gap Analysis**: Enter a target role and your current skills to see exactly what you're missing.
-- **AI Career Roadmap**: Generate a 3-5 year progression plan with estimated timelines and recommended certifications.
-- **Adaptive Training Quizzes**: Generate specific quizzes on any topic (React, Python, etc.) to test your knowledge with instant AI feedback.
-- **Skills Radar Chart**: Visual breakdown of your proficiency vs. market requirements.
-- **Monolithic Architecture**: Unified Python backend (FastAPI) that serves the React frontend builder for zero-overhead deployment.
-<<<<<<< HEAD
+AI Resume Analyzer
+Upload a PDF or paste resume text to receive an instant score, strength analysis, and keyword density insights.
 
-## 🛠️ Tech Stack
+Dynamic Skill Gap Analysis
+Compare your current skill set with a target role to identify missing competencies.
 
-=======
-## 🛠️ Tech Stack
->>>>>>> 34a1d81faa0820f45de81452b3726452e9f4c534
-- **Backend**: Python 3.10+, [FastAPI](https://fastapi.tiangolo.com/)
-- **Frontend**: React (Vite), Tailwind CSS, Framer Motion
-- **AI**: Google Gemini Pro 2.5 (Generative AI)
-- **Database**: Supabase (PostgreSQL)
-- **Charts**: Recharts
-- **Icons**: Lucide React
-<<<<<<< HEAD
+AI Career Roadmap
+Generate a 3–5 year career progression plan with timelines and recommended certifications.
 
-## 🚀 Getting Started
+Adaptive Training Quizzes
+Create topic-specific quizzes (e.g., Python, React) with instant AI-generated feedback.
 
-### Prerequisites
+Skills Radar Chart
+Visual comparison of your proficiency against market requirements.
 
-- Python installed
-- Node.js (only for modifying frontend)
+Monolithic Architecture
+Unified Python backend (FastAPI) serving a pre-built React frontend for streamlined deployment.
 
-### Installation
+🛠️ Tech Stack
 
-=======
-## 🚀 Getting Started
-### Prerequisites
-- Python installed
-- Node.js (only for modifying frontend)
-### Installation
->>>>>>> 34a1d81faa0820f45de81452b3726452e9f4c534
-1. **Clone the repository**
-2. **Setup Virtual Environment**
-   ```bash
-   python -m venv venv
-   .\venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-<<<<<<< HEAD
-### 3. Configure Environment Variables (For Judges/Evaluators)
-Because we prioritize security, API keys are not committed to the repository. 
+Backend: Python 3.10+, FastAPI
 
-1. Duplicate the `.env.example` file and rename it to `.env`.
-2. Open `.env` and insert a valid **Google Gemini API Key**:
-   ```env
-   # AI (Gemini)
-   GEMINI_API_KEY=your_gemini_api_key_here
-   ```
-   *(Note: The application's AI features will not function without a valid Gemini key)*
+Frontend: React (Vite), Tailwind CSS, Framer Motion
 
-## 🏃 Running the Application
+Database: Supabase (PostgreSQL)
 
-You only need one command to run everything!
+Charts: Recharts
 
-```bash
+Icons: Lucide React
+
+AI: Google Gemini Pro 2.5
+
+🚀 Getting Started
+Prerequisites
+
+Python installed
+
+Node.js (required only for frontend modifications)
+
+Installation
+
+Clone the repository
+
+Set up a virtual environment
+
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+Configure Environment Variables
+
+API keys are not committed to the repository for security reasons.
+
+Duplicate .env.example and rename it to .env
+
+Add your credentials:
+
+# Database (Supabase)
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_anon_key
+
+# AI (Gemini)
+GEMINI_API_KEY=your_gemini_api_key
+
+# Training (Optional)
+YOUTUBE_API_KEY=your_youtube_api_key
+
+Note: AI features require a valid Gemini API key.
+
+🏃 Running the Application
+
+Run the entire application with a single command:
+
 uvicorn app.main:app --reload
-```
 
-Then visit: **[http://localhost:8000](http://localhost:8000)**
+Access the app at: http://localhost:8000
 
----
-
-=======
-3. **Configure Environment Variables**
-   Create a `.env` file in the root directory:
-   ```env
-   # Database (Supabase)
-   SUPABASE_URL=your_supabase_url
-   SUPABASE_KEY=your_supabase_anon_key
-   # AI (Gemini)
-   GEMINI_API_KEY=your_gemini_api_key
-   # Training (YouTube API - Optional)
-   YOUTUBE_API_KEY=your_youtube_key
-   ```
-## 🏃 Running the Application
-You only need one command to run everything!
-```bash
-uvicorn app.main:app --reload
-```
-Then visit: **[http://localhost:8000](http://localhost:8000)**
----
->>>>>>> 34a1d81faa0820f45de81452b3726452e9f4c534
-**Note**: The project is designed as a **Monolith**. The React frontend code in `src/` has already been built into the `dist/` folder, which the Python server serves automatically. If you edit the JavaScript files, you will need to run `npm run build` again to see changes.
+Project Note:
+VidyaMitra is implemented as a monolith. The React frontend located in src/ is pre-built into the dist/ directory and served automatically by the FastAPI backend. If frontend code is modified, run npm run build to reflect changes.
